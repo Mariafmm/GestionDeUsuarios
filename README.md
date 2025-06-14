@@ -39,7 +39,8 @@ agrega el archivo .env que esta adjunto en el correo
 
 4. Crea la base de datos y ejecuta el script:
 createdb usuarios
-psql -U postgres -d usuarios -f database/db.sql
+psql -U postgres -d usuarios -f database/db.sql.
+Si no deseas usar la terminal, puedes crear la base de datos usuarios en pgAdmin y ejecutar manualmente el contenido del archivo database/db.sql en el Query Tool.”
 
 5. inicia el servidor:
 npm run dev
@@ -59,3 +60,18 @@ ejemplo de json para peticion post y put:
   "edad": 28
 }
 
+---
+
+## Lo que aprendí y qué mejoraría
+
+### ¿Qué aprendí?
+
+- Reforcé la estructura de una API REST usando Node.js, Express y PostgreSQL.
+- Utilicé consultas SQL parametrizadas para evitar inyecciones.
+- Organicé el proyecto de forma modular (tipo MVC).
+
+### ¿Qué mejoraría?
+
+- Incluir pruebas automatizadas (unitarias y de integración).
+- Completar la integración con Docker y docker-compose.
+- Utilizar un ORM como Prisma o Sequelize para manejar mejor la base de datos.
