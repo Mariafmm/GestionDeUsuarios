@@ -1,0 +1,18 @@
+# ⚙️ Node.js
+node_modules/
+.env
+.env.local
+.env.docker
+npm-debug.log*
+package-lock.json
+
+# 💾 PostgreSQL
+*.sql
+!database/db.sql
+
+# 🚫 Sistema operativo
+.DS_Store
+Thumbs.db
+
+# 🐳 Docker (si se incluye en el futuro)
+docker-compose.override.yml
